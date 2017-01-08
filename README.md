@@ -13,9 +13,9 @@ $ npm install -g ionic@beta
 $ sudo npm install -g cordova
 ```
 
-* Replace YOUR_PROJECT_NUMBER_HERE in app.component.ts with above PROJECT_NUMBER
+* Replace YOUR_SENDER_ID in package.json and app.ts with above SENDER_ID
 
-* Install node_modules and push plugin ` bash $ npm install $ ionic plugin add https://github.com/phonegap/phonegap-plugin-push --variable SENDER_ID=”YOUR_PROJECT_NUMBER_HERE” `
+* Install node_modules and push plugin ` $ npm install $ ionic plugin add https://github.com/phonegap/phonegap-plugin-push --variable SENDER_ID=”YOUR_SENDER_ID” `
 
 ### Android
 ``` bash
