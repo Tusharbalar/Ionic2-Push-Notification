@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Platform, AlertController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { Nav, Platform, AlertController } from 'ionic-angular';
 import { StatusBar, Splashscreen, Push } from 'ionic-native';
 
 import { TabsPage } from '../pages/tabs/tabs';
@@ -9,9 +9,12 @@ import { TabsPage } from '../pages/tabs/tabs';
   templateUrl: 'app.html'
 })
 export class MyApp {
+
+  @ViewChild(Nav) nav: Nav;
   rootPage = TabsPage;
 
-  constructor(platform: Platform, alertCtrl: AlertController) {
+  constructor(platform: Platform,
+              public alertCtrl: AlertController,) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -56,7 +59,6 @@ export class MyApp {
 
     push.on('notification', (data) => {
       console.log('message', data.message);
-      let self = this;
       //if user using app and push notification comes
       if (data.additionalData.foreground) {
         // if application open, show popup
@@ -70,15 +72,14 @@ export class MyApp {
             text: 'View',
             handler: () => {
               //TODO: Your logic here
-              self.nav.setRoot(TabsPage);
             }
           }]
         });
-        self.nav.present(confirmAlert);
+        confirmAlert.present();
       } else {
         //if user NOT using app and push notification comes
         //TODO: Your logic on click of push notification directly
-        self.nav.setRoot(TabsPage);
+        this.nav.setRoot(TabsPage);
         console.log("Push notification clicked");
       }
     });
