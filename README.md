@@ -35,4 +35,5 @@ Run using XCode
 
 ## Push Notifications Preview in lock screen and while using App
 
+![Alt text](src/screenshots/android_alert.png?raw=true "Android Alert")
 
