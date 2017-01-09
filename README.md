@@ -4,12 +4,12 @@ This can be used as base template for Ionic 2 Push apps. It's working for both i
 
 ## Tutorial
 
-*[a Push Notifications in Ionic 2
+* [a Push Notifications in Ionic 2
 ](https://medium.com/@ankushaggarwal/push-notifications-in-ionic-2-658461108c59#.38k12r3zv)
 
-*[a FCM Setup for Android Notifications](https://medium.com/@ankushaggarwal/gcm-setup-for-android-push-notifications-656cfdd8adbd#.5muotfc1n)
+* [a FCM Setup for Android Notifications](https://medium.com/@ankushaggarwal/gcm-setup-for-android-push-notifications-656cfdd8adbd#.5muotfc1n)
 
-*[a APNS Setup for IOS Notifications](https://medium.com/@ankushaggarwal/generate-apns-certificate-for-ios-push-notifications-85e4a917d522#.p01jyoa9b)
+* [a APNS Setup for IOS Notifications](https://medium.com/@ankushaggarwal/generate-apns-certificate-for-ios-push-notifications-85e4a917d522#.p01jyoa9b)
 
 ## Getting Started
 
